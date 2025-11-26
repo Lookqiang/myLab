@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>汉字书写演示 - Hanzi Writer H5</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>汉字书写演示</h1>
+        <p>使用 Hanzi Writer 展示汉字书写动画</p>
+      </header>
+
+      <main class="main-content">
+        <div class="controls">
+          <div class="input-group">
+            <label for="character-input">输入汉字：</label>
+            <input
+              type="text"
+              id="character-input"
+              placeholder="请输入汉字"
+              value="永"
+            />
+          </div>
+
+          <div class="button-group">
+            <button id="animate-btn">播放动画</button>
+            <button id="quiz-btn">测试模式</button>
+            <button id="reset-btn">重置</button>
+          </div>
+
+          <div class="options">
+            <label>
+              <input type="checkbox" id="show-outline" checked /> 显示轮廓
+            </label>
+            <label>
+              <input type="checkbox" id="show-character" checked /> 显示汉字
+            </label>
+          </div>
+        </div>
+
+        <div class="writer-container">
+          <div id="character-target-div"></div>
+        </div>
+
+        <div class="info-panel">
+          <h3>笔画信息</h3>
+          <div id="stroke-info">
+            <p>请输入汉字开始演示</p>
+          </div>
+        </div>
+
+        <div class="examples">
+          <h3>示例汉字</h3>
+          <div class="example-chars">
+            <button class="example-char" data-char="永">永</button>
+            <button class="example-char" data-char="福">福</button>
+            <button class="example-char" data-char="爱">爱</button>
+            <button class="example-char" data-char="中">中</button>
+            <button class="example-char" data-char="国">国</button>
+            <button class="example-char" data-char="春">春</button>
+            <button class="example-char" data-char="夏">夏</button>
+            <button class="example-char" data-char="秋">秋</button>
+            <button class="example-char" data-char="冬">冬</button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
