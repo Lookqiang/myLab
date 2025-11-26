@@ -44,8 +44,8 @@
 pre-commit:
   parallel: true
   commands:
-    code-workspace:
-      run: pnpm vsh code-workspace --auto-commit
+    # code-workspace:
+    #   run: pnpm vsh code-workspace --auto-commit
     lint-md:
       run: pnpm prettier --cache --ignore-unknown --write {staged_files}
       glob: "*.md"
