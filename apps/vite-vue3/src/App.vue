@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import TableCell from "@/components/TableCell.vue";
+const appTitle = "vite-vue3";
 </script>
 
 <template>
