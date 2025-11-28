@@ -1,10 +1,9 @@
 <script setup lang="ts">
-const appTitle = "vite-vue3";
-const logoSrc = new URL("../assets/logo-vue3.svg", import.meta.url).href;
+const appTitle = 'vite-vue3'
 </script>
 
 <template>
-  <TableCell />
+  {{ appTitle }}
 </template>
 
 <style scoped>
