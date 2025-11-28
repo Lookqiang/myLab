@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const appTitle = "vite-vue3";
+const logoSrc = new URL("../assets/logo-vue3.svg", import.meta.url).href;
 </script>
 
 <template>
