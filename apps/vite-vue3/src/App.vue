@@ -4,6 +4,7 @@ const appTitle = 'vite-vue3'
 
 <template>
   {{ appTitle }}
+
 </template>
 
 <style scoped>
@@ -15,7 +16,7 @@ const appTitle = 'vite-vue3'
 }
 
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #151747aa);
 }
 
 .logo.vue:hover {
