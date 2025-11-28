@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const appTitle = 'vite-vue3'
+const appTitle = "vite-vue3";
 </script>
 
 <template>
