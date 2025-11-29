@@ -1,4 +1,10 @@
 /** @type {import("stylelint").Config} */
 export default {
-  extends: ["stylelint-config-standard"],
-};
+  extends: ['stylelint-config-standard'],
+  overrides: [
+    {
+      files: ['**/*.vue'],
+      customSyntax: 'postcss-html',
+    },
+  ],
+}

@@ -1,9 +1,9 @@
 <script setup lang="ts">
-const appTitle = "vite-vue3";
+const appTitle = 'vite-vue3'
 </script>
 
 <template>
-  {{ appTitle }}
+  <div> {{ appTitle }} </div>
 </template>
 
 <style scoped>
@@ -12,7 +12,6 @@ const appTitle = "vite-vue3";
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
-  width: clcc("6em1");
 }
 
 .logo:hover {

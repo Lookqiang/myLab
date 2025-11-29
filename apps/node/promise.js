@@ -1,5 +1,5 @@
 const a = 10
 
-console.log(Promise.resolve(a).then(res=>{
- Promise.reject('Whatever')
-}))
+Promise.resolve(a).then((res) => {
+    Promise.reject(new Error(`错误了${res}`))
+  }),
