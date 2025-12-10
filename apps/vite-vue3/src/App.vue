@@ -3,13 +3,12 @@ const appTitle = 'vite-vue3'
 </script>
 
 <template>
-  <div> {{ appTitle }} </div>
+  <div>{{ appTitle }}</div>
 </template>
 
 <style scoped>
 .logo {
   height: 6em;
-  padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
