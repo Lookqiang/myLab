@@ -11,7 +11,8 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types",
-    "dev:vite-vue3": "turbo run vite-vue3#dev"
+    "dev:vite-vue3": "turbo run vite-vue3#dev",
+    "dev:docs": "turbo dev --filter=docs"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^6.2.0",
@@ -39,5 +40,9 @@
     "turbo": "^2.5.8",
     "typescript": "5.9.2",
     "typescript-eslint": "^8.40.0"
+  },
+  "volta": {
+    "pnpm": "10.32.1",
+    "node": "24.14.0"
   }
 }

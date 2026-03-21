@@ -44,13 +44,15 @@
 pre-commit:
   parallel: true
   commands:
-    # code-workspace:
-    #   run: pnpm vsh code-workspace --auto-commit
-    lint:
+    format:
+      run: pnpm prettier --write --ignore-unknown {staged_files}
+      glob: "*.{js,ts,jsx,tsx,vue,json,yml,yaml,md,html,css,scss,less,styl}"
+    lint-js:
       run: pnpm eslint --fix --cache --no-warn-ignored {staged_files}
+      glob: "*.{js,ts,jsx,tsx,vue}"
     lint-style:
-      run: pnpm stylelint --fix --allow-empty-input  {staged_files}
-      glob: '*.{scss,less,styl,html,vue,css}'
+      run: pnpm stylelint --fix --allow-empty-input {staged_files}
+      glob: "*.{scss,less,styl,html,vue,css}"
 
 post-merge:
   commands:
