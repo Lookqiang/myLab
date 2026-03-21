@@ -11,6 +11,7 @@
     "lint": "eslint . "
   },
   "dependencies": {
+    "@repo/math": "workspace:*",
     "@ffmpeg/ffmpeg": "^0.12.15",
     "@ffmpeg/util": "^0.12.2",
     "element-plus": "^2.11.5",

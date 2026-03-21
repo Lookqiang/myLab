@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>屏幕键盘</title>
+    <style>
+      .keyboard {
+        padding: 0 12px;
+        background-image: url("./key-bg-middle.png");
+        background-clip: content-box;
+        position: relative;
+        background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 100px;
+        height: 40px;
+      }
+
+      .keyboard::before {
+        content: "";
+        width: 12px;
+        height: 100%;
+        background-image: url("./key-bg-left.png");
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background-position: left;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+
+      .keyboard::after {
+        content: "";
+        width: 12px;
+        background-image: url("./key-bg-right.png");
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-position: right;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+
+      .keyboard1 {
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-image: url("./bg.png") 1% 35% 1% 35% fill;
+        width: 40vw;
+        height: 46px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="keyboard1" id="aa"></div>
+    <div style="height: 46px; width: 40vw">
+      <img
+        style="height: 100%; width: 12px"
+        src="./key-bg-left.png"
+        alt=""
+      /><img
+        style="height: 100%; width: calc(100% - 24px)"
+        src="./key-bg-middle.png"
+        alt=""
+      /><img
+        style="width: 12px; height: 100%"
+        src="./key-bg-right.png"
+        alt=""
+      />
+    </div>
+    <button id="ad">get width</button>
+  </body>
+  <script>
+    const aa = document.getElementById("aa");
+    const ad = document.getElementById("ad");
+    ad.addEventListener("click", () => {
+      console.log(aa.offsetWidth * 1.25);
+      aa.style.width = Math.ceil(aa.offsetWidth * 1.25) + "px";
+    });
+  </script>
+</html>

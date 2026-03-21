@@ -1,9 +1,9 @@
 <script setup lang="ts">
-const appTitle = 'vite-vue3'
+import ScreenWakeLockAPI from "./components/ScreenWakeLockAPI.vue";
 </script>
 
 <template>
-  <div>{{ appTitle }}</div>
+  <ScreenWakeLockAPI />
 </template>
 
 <style scoped>
